@@ -3,7 +3,8 @@ set -e
 
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
-	#apt-get update
+	apt-get update
+	apt-get install firefox
 	apt-get install -y python-pip
 	apt-get install xvfb
 fi
